@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Follow-Up System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customer Follow-Up System</h1>
+    </header>
+    <main>
+        <section id="customer-info">
+            <h2>Customer Information</h2>
+            <form id="customer-form">
+                <label for="customer-name">Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" name="customer-email" required>
+                <label for="customer-phone">Phone:</label>
+                <input type="tel" id="customer-phone" name="customer-phone" required>
+                <label for="follow-up-status">Follow-Up Status:</label>
+                <select id="follow-up-status" name="follow-up-status" required>
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+                <label for="notes">Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="search">
+            <h2>Search Customer</h2>
+            <input type="text" id="search-input" placeholder="Search by name, email, or phone">
+            <button id="search-button">Search</button>
+            <div id="search-results"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
